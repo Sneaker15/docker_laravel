@@ -5,4 +5,4 @@ copy laravel\.env.example laravel\.env
 docker run --rm -v %cd%\laravel:/app composer/composer install
 
 docker-compose up -d
-docker-compose exec app php artisan %1
+docker-compose exec app php artisan key:generate
